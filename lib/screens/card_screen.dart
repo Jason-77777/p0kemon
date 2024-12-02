@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:p0kemon/services/card_service.dart';
 import 'package:p0kemon/models/card_model.dart';
+import 'package:p0kemon/screens/home_screen.dart'; // Import the HomeScreen
 
 class CardScreen extends StatefulWidget {
   @override
@@ -220,7 +221,18 @@ class _CardScreenState extends State<CardScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Pokémon Cards')),
+      appBar: AppBar(
+        title: Text('Pokémon Cards'),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.of(context).pushReplacement(
+              MaterialPageRoute(
+                  builder: (context) => HomeScreen()), // Navigate to HomeScreen
+            );
+          },
+        ),
+      ),
       body: _isLoading
           ? Center(child: CircularProgressIndicator())
           : _cards.isEmpty

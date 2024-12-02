@@ -13,40 +13,37 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Display Pikachu GIF
-            // Image.asset(
-            //   'assets/images/pikachugif.gif', // Path to the GIF in your assets folder
-            //   width: 150,
-            //   height: 150,
+            Image.asset(
+              'assets/logo_pokemon.png', // Path to the GIF in your assets folder
+            ),
+            // SizedBox(height: 20),
+            // ElevatedButton(
+            //   onPressed: () {
+            //     Navigator.push(
+            //       context,
+            //       MaterialPageRoute(builder: (context) => CardScreen()),
+            //     );
+            //   },
+            //   style: ElevatedButton.styleFrom(
+            //     minimumSize: Size(200, 100),
+            //     backgroundColor: Colors.grey[300],
+            //   ),
+            //   child: Text('Your Collection'),
             // ),
-            SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => CardScreen()),
-                );
-              },
-              style: ElevatedButton.styleFrom(
-                minimumSize: Size(200, 100),
-                backgroundColor: Colors.grey[300],
-              ),
-              child: Text('Your Collection'),
-            ),
-            SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => BidScreen()),
-                );
-              },
-              style: ElevatedButton.styleFrom(
-                minimumSize: Size(200, 100),
-                backgroundColor: Colors.grey[300],
-              ),
-              child: Text('Bids Card'),
-            ),
+            // SizedBox(height: 20),
+            // ElevatedButton(
+            //   onPressed: () {
+            //     Navigator.push(
+            //       context,
+            //       MaterialPageRoute(builder: (context) => BidScreen()),
+            //     );
+            //   },
+            //   style: ElevatedButton.styleFrom(
+            //     minimumSize: Size(200, 100),
+            //     backgroundColor: Colors.grey[300],
+            //   ),
+            //   child: Text('Bids Card'),
+            // ),
           ],
         ),
       ),
