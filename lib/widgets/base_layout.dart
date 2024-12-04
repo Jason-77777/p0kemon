@@ -49,8 +49,8 @@ class BaseLayout extends StatelessWidget {
           children: [
             UserAccountsDrawerHeader(
               decoration: BoxDecoration(color: Colors.blue),
-              accountName: Text('Name', style: TextStyle(fontSize: 20)),
-              accountEmail: Text('example@email.com'),
+              accountName: Text('Jason', style: TextStyle(fontSize: 20)),
+              accountEmail: Text('jason@email.com'),
               currentAccountPicture: CircleAvatar(
                 backgroundColor: Colors.white,
                 child: Icon(Icons.person, size: 50, color: Colors.grey),

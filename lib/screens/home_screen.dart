@@ -14,7 +14,9 @@ class HomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              'assets/logo_pokemon.png', // Path to the GIF in your assets folder
+              'assets/logo_pokemon.png',
+              width: 400,
+              height: 400, // Path to the GIF in your assets folder
             ),
             // SizedBox(height: 20),
             // ElevatedButton(
